@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoritesViewCell" rowHeight="205" id="KGk-i7-Jjw" customClass="FavoritesViewCell" customModule="Lukandah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="556" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="556" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Muc-M2-3QF">
+                        <rect key="frame" x="20" y="0.0" width="516" height="195"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dummy" translatesAutoresizingMaskIntoConstraints="NO" id="fHY-7m-ynw">
+                                <rect key="frame" x="0.0" y="15" width="133" height="165"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Hotel Murila" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPG-PI-D98">
+                                <rect key="frame" x="153" y="15" width="111" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcelona, Spain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ap-G0-lBQ">
+                                <rect key="frame" x="153" y="44" width="101.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_locationblack" translatesAutoresizingMaskIntoConstraints="NO" id="UDL-PK-R5Y">
+                                <rect key="frame" x="153" y="145" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="ULp-sQ-5wC"/>
+                                    <constraint firstAttribute="height" constant="10" id="wp9-iq-9uG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 km to city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7i-da-EQl">
+                                <rect key="frame" x="168" y="130" width="71" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueStar" translatesAutoresizingMaskIntoConstraints="NO" id="IbN-pq-mM3">
+                                <rect key="frame" x="153" y="175" width="60" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="db3-7c-mlC"/>
+                                    <constraint firstAttribute="width" constant="60" id="ess-mh-fpq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXE-UQ-3ZA">
+                                <rect key="frame" x="218" y="172" width="24.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$220" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlp-2c-io6">
+                                <rect key="frame" x="465.5" y="139.5" width="40.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/per night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56P-QG-BBd">
+                                <rect key="frame" x="451.5" y="165.5" width="54.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fHY-7m-ynw" firstAttribute="centerY" secondItem="Muc-M2-3QF" secondAttribute="centerY" id="0TD-6b-ifX"/>
+                            <constraint firstItem="6ap-G0-lBQ" firstAttribute="top" secondItem="OPG-PI-D98" secondAttribute="bottom" constant="5" id="20a-kS-log"/>
+                            <constraint firstAttribute="trailing" secondItem="wlp-2c-io6" secondAttribute="trailing" constant="10" id="8Xq-TE-tWW"/>
+                            <constraint firstItem="IbN-pq-mM3" firstAttribute="leading" secondItem="fHY-7m-ynw" secondAttribute="trailing" constant="20" id="EWw-Ub-BXm"/>
+                            <constraint firstAttribute="bottom" secondItem="IbN-pq-mM3" secondAttribute="bottom" constant="10" id="IFu-yM-g1L"/>
+                            <constraint firstAttribute="trailing" secondItem="56P-QG-BBd" secondAttribute="trailing" constant="10" id="KDb-m7-u4M"/>
+                            <constraint firstItem="56P-QG-BBd" firstAttribute="bottom" secondItem="fHY-7m-ynw" secondAttribute="bottom" id="NWf-T5-925"/>
+                            <constraint firstItem="Z7i-da-EQl" firstAttribute="centerY" secondItem="UDL-PK-R5Y" secondAttribute="centerY" id="OMe-F8-isU"/>
+                            <constraint firstItem="OPG-PI-D98" firstAttribute="leading" secondItem="fHY-7m-ynw" secondAttribute="trailing" constant="20" id="PeY-Ni-2CB"/>
+                            <constraint firstItem="6ap-G0-lBQ" firstAttribute="leading" secondItem="fHY-7m-ynw" secondAttribute="trailing" constant="20" id="RdJ-qb-4A1"/>
+                            <constraint firstItem="fHY-7m-ynw" firstAttribute="width" secondItem="Muc-M2-3QF" secondAttribute="width" multiplier="0.257426" id="WPG-t6-5UN"/>
+                            <constraint firstItem="RXE-UQ-3ZA" firstAttribute="centerY" secondItem="IbN-pq-mM3" secondAttribute="centerY" id="Y1e-Ho-fp4"/>
+                            <constraint firstItem="RXE-UQ-3ZA" firstAttribute="leading" secondItem="IbN-pq-mM3" secondAttribute="trailing" constant="5" id="aiX-wm-ubs"/>
+                            <constraint firstAttribute="bottom" secondItem="fHY-7m-ynw" secondAttribute="bottom" constant="15" id="dMb-k6-on0"/>
+                            <constraint firstItem="UDL-PK-R5Y" firstAttribute="leading" secondItem="fHY-7m-ynw" secondAttribute="trailing" constant="20" id="eZQ-vH-ZaF"/>
+                            <constraint firstItem="Z7i-da-EQl" firstAttribute="leading" secondItem="UDL-PK-R5Y" secondAttribute="trailing" constant="5" id="j0K-ic-14F"/>
+                            <constraint firstItem="fHY-7m-ynw" firstAttribute="leading" secondItem="Muc-M2-3QF" secondAttribute="leading" id="mbC-n3-hNw"/>
+                            <constraint firstItem="OPG-PI-D98" firstAttribute="top" secondItem="fHY-7m-ynw" secondAttribute="top" id="rKh-ea-ROt"/>
+                            <constraint firstItem="IbN-pq-mM3" firstAttribute="top" secondItem="Z7i-da-EQl" secondAttribute="bottom" constant="5" id="wKe-nE-zQn"/>
+                            <constraint firstItem="56P-QG-BBd" firstAttribute="top" secondItem="wlp-2c-io6" secondAttribute="bottom" constant="5" id="xVB-qV-hMx"/>
+                            <constraint firstItem="wlp-2c-io6" firstAttribute="centerY" secondItem="Z7i-da-EQl" secondAttribute="centerY" id="xgK-jM-VQ2"/>
+                            <constraint firstItem="fHY-7m-ynw" firstAttribute="top" secondItem="Muc-M2-3QF" secondAttribute="top" constant="15" id="zyp-4M-ozA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Muc-M2-3QF" secondAttribute="bottom" constant="10" id="8iz-xy-ma9"/>
+                    <constraint firstItem="Muc-M2-3QF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Mpg-Da-Oqv"/>
+                    <constraint firstAttribute="trailing" secondItem="Muc-M2-3QF" secondAttribute="trailing" constant="20" id="f9a-Ta-vOm"/>
+                    <constraint firstItem="Muc-M2-3QF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lR9-Dw-sOj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Daysout" destination="56P-QG-BBd" id="ane-BI-NHo"/>
+                <outlet property="Distance" destination="Z7i-da-EQl" id="NgY-RG-RSX"/>
+                <outlet property="Favimages" destination="fHY-7m-ynw" id="RdX-LL-Bqe"/>
+                <outlet property="Hotelname" destination="OPG-PI-D98" id="f7y-OV-9dI"/>
+                <outlet property="Location" destination="56P-QG-BBd" id="P1E-XZ-vwA"/>
+                <outlet property="Locationmarker" destination="UDL-PK-R5Y" id="2Wn-5Y-ljO"/>
+                <outlet property="Price" destination="wlp-2c-io6" id="gmH-B9-nq2"/>
+                <outlet property="Stars" destination="IbN-pq-mM3" id="hmH-fZ-Pki"/>
+                <outlet property="Starscount" destination="RXE-UQ-3ZA" id="EzE-tH-GP1"/>
+            </connections>
+            <point key="canvasLocation" x="308.69565217391306" y="150.33482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BlueStar" width="45" height="9"/>
+        <image name="ic_dummy" width="112" height="109"/>
+        <image name="ic_locationblack" width="9" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
