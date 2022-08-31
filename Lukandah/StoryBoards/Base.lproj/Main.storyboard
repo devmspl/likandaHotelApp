@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Xr-rR-sch">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Xr-rR-sch">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -885,6 +885,9 @@ recieve a verification code.</string>
                             <constraint firstItem="oEE-kj-JQe" firstAttribute="height" secondItem="Npv-hh-AMv" secondAttribute="height" multiplier="0.3" id="zv6-OJ-0C1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Emailtext" destination="1lQ-Lh-WMw" id="Ent-lR-I2d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTb-US-N0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1004,7 +1007,7 @@ recieve a verification code.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="submit_tapped:" destination="yQE-Dv-WQH" eventType="touchUpInside" id="gA4-eX-ozH"/>
+                                    <action selector="SubmitBtn:" destination="yQE-Dv-WQH" eventType="touchUpInside" id="Fyb-au-Ugm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1030,6 +1033,12 @@ recieve a verification code.</string>
                             <constraint firstItem="73F-uh-PF5" firstAttribute="top" secondItem="zsd-ds-10v" secondAttribute="bottom" constant="40" id="xOp-3o-fFE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="first" destination="faM-2O-psS" id="vbe-0X-vjz"/>
+                        <outlet property="fourth" destination="A2L-j6-Qf2" id="95V-ad-1TY"/>
+                        <outlet property="second" destination="YOe-Si-uhN" id="8vC-6T-oNG"/>
+                        <outlet property="third" destination="ohs-du-xTi" id="nPT-mk-VST"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYg-JC-jNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1061,7 +1070,7 @@ recieve a verification code.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PC-zz-HC8">
-                                <rect key="frame" x="25" y="470" width="364" height="50"/>
+                                <rect key="frame" x="25" y="541" width="364" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lock_logo" translatesAutoresizingMaskIntoConstraints="NO" id="r22-jV-n99">
                                         <rect key="frame" x="0.0" y="10" width="30" height="30"/>
@@ -1112,7 +1121,7 @@ recieve a verification code.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jP-AW-OQf">
-                                <rect key="frame" x="25" y="540" width="364" height="50"/>
+                                <rect key="frame" x="25" y="611" width="364" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lock_logo" translatesAutoresizingMaskIntoConstraints="NO" id="TjU-dZ-jaS">
                                         <rect key="frame" x="0.0" y="10" width="30" height="30"/>
@@ -1163,7 +1172,7 @@ recieve a verification code.</string>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT2-FX-zjD">
-                                <rect key="frame" x="83" y="630" width="248" height="50"/>
+                                <rect key="frame" x="83" y="701" width="248" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="a0F-J6-50s"/>
@@ -1181,33 +1190,78 @@ recieve a verification code.</string>
                                     <action selector="continue_tapped:" destination="Xl1-9W-uQI" eventType="touchUpInside" id="Bye-9s-9wZ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5B-kH-hJo">
+                                <rect key="frame" x="25" y="470" width="364" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email_logo" translatesAutoresizingMaskIntoConstraints="NO" id="1oT-0X-jrI">
+                                        <rect key="frame" x="0.0" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4gO-JK-4SN"/>
+                                            <constraint firstAttribute="width" constant="30" id="spd-2f-Tfr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ay-m3-ng9">
+                                        <rect key="frame" x="50" y="0.0" width="314" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7Ay-m3-ng9" firstAttribute="leading" secondItem="1oT-0X-jrI" secondAttribute="trailing" constant="20" id="1Au-tS-cI5"/>
+                                    <constraint firstItem="7Ay-m3-ng9" firstAttribute="top" secondItem="o5B-kH-hJo" secondAttribute="top" id="39K-Ae-0pt"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Ay-m3-ng9" secondAttribute="bottom" id="Ezp-uD-SJg"/>
+                                    <constraint firstItem="1oT-0X-jrI" firstAttribute="leading" secondItem="o5B-kH-hJo" secondAttribute="leading" id="FhZ-Xl-dRJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Ay-m3-ng9" secondAttribute="trailing" id="God-GM-dzM"/>
+                                    <constraint firstAttribute="height" constant="50" id="PTE-gL-GWw"/>
+                                    <constraint firstItem="1oT-0X-jrI" firstAttribute="centerY" secondItem="o5B-kH-hJo" secondAttribute="centerY" id="jq9-iW-TvR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeK-MA-AUS">
+                                <rect key="frame" x="75" y="520" width="314" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="54N-KD-kcF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gx2-cS-OIg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aeK-MA-AUS" firstAttribute="leading" secondItem="Gx2-cS-OIg" secondAttribute="leading" constant="75" id="3sq-uX-pHw"/>
                             <constraint firstItem="9Ab-DP-eiR" firstAttribute="leading" secondItem="Gx2-cS-OIg" secondAttribute="leading" id="4JT-Ie-xnZ"/>
                             <constraint firstItem="RT2-FX-zjD" firstAttribute="top" secondItem="5jP-AW-OQf" secondAttribute="bottom" constant="40" id="9zd-bK-7CF"/>
                             <constraint firstItem="9Ab-DP-eiR" firstAttribute="top" secondItem="Gx2-cS-OIg" secondAttribute="top" constant="20" id="BYo-cG-FwC"/>
+                            <constraint firstItem="Gx2-cS-OIg" firstAttribute="trailing" secondItem="o5B-kH-hJo" secondAttribute="trailing" constant="25" id="Cze-3D-Nuy"/>
                             <constraint firstItem="5jP-AW-OQf" firstAttribute="top" secondItem="9PC-zz-HC8" secondAttribute="bottom" constant="20" id="DU0-9S-BuN"/>
                             <constraint firstItem="Gx2-cS-OIg" firstAttribute="trailing" secondItem="9PC-zz-HC8" secondAttribute="trailing" constant="25" id="EmI-1U-7Sp"/>
                             <constraint firstItem="BhP-lm-5Y6" firstAttribute="leading" secondItem="Gx2-cS-OIg" secondAttribute="leading" constant="25" id="En9-pj-xPO"/>
                             <constraint firstItem="9PC-zz-HC8" firstAttribute="leading" secondItem="Gx2-cS-OIg" secondAttribute="leading" constant="25" id="HiT-KA-9gC"/>
+                            <constraint firstItem="9PC-zz-HC8" firstAttribute="top" secondItem="aeK-MA-AUS" secondAttribute="bottom" constant="20" id="KzJ-Mc-C7P"/>
+                            <constraint firstItem="o5B-kH-hJo" firstAttribute="top" secondItem="3lO-QN-hHK" secondAttribute="bottom" constant="40" id="O7b-i5-R9o"/>
                             <constraint firstItem="9Ab-DP-eiR" firstAttribute="height" secondItem="cjp-Rk-cBP" secondAttribute="height" multiplier="0.3" id="Rul-7K-3zu"/>
                             <constraint firstItem="Gx2-cS-OIg" firstAttribute="trailing" secondItem="9Ab-DP-eiR" secondAttribute="trailing" id="S2q-Gt-pgj"/>
+                            <constraint firstItem="aeK-MA-AUS" firstAttribute="top" secondItem="o5B-kH-hJo" secondAttribute="bottom" id="SOr-rV-nXA"/>
                             <constraint firstItem="RT2-FX-zjD" firstAttribute="width" secondItem="cjp-Rk-cBP" secondAttribute="width" multiplier="0.6" id="abp-lv-GT7"/>
                             <constraint firstItem="3lO-QN-hHK" firstAttribute="top" secondItem="BhP-lm-5Y6" secondAttribute="bottom" constant="10" id="dPY-2b-D92"/>
+                            <constraint firstItem="o5B-kH-hJo" firstAttribute="leading" secondItem="Gx2-cS-OIg" secondAttribute="leading" constant="25" id="fmN-rw-4wY"/>
                             <constraint firstItem="3lO-QN-hHK" firstAttribute="leading" secondItem="BhP-lm-5Y6" secondAttribute="leading" id="g3B-0z-U8k"/>
                             <constraint firstItem="5jP-AW-OQf" firstAttribute="leading" secondItem="9PC-zz-HC8" secondAttribute="leading" id="hsU-oB-e71"/>
-                            <constraint firstItem="9PC-zz-HC8" firstAttribute="top" secondItem="3lO-QN-hHK" secondAttribute="bottom" constant="40" id="udT-42-G4Z"/>
                             <constraint firstItem="RT2-FX-zjD" firstAttribute="centerX" secondItem="cjp-Rk-cBP" secondAttribute="centerX" id="uzU-Ef-fle"/>
                             <constraint firstItem="BhP-lm-5Y6" firstAttribute="top" secondItem="9Ab-DP-eiR" secondAttribute="bottom" constant="10" id="vEY-Jw-x3g"/>
+                            <constraint firstItem="Gx2-cS-OIg" firstAttribute="trailing" secondItem="aeK-MA-AUS" secondAttribute="trailing" constant="25" id="xXl-Ru-epR"/>
                             <constraint firstItem="5jP-AW-OQf" firstAttribute="trailing" secondItem="9PC-zz-HC8" secondAttribute="trailing" id="xzS-Le-zL5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Confirmpasswordtext" destination="0ke-PG-ibU" id="GFD-p3-6EL"/>
+                        <outlet property="Emailtext" destination="7Ay-m3-ng9" id="4Xf-8D-rQd"/>
+                        <outlet property="Newpasswordtext" destination="Gcy-TA-l4H" id="1i8-I7-dSv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBE-jB-Kvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5103" y="70"/>
+            <point key="canvasLocation" x="5102.898550724638" y="69.642857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w0i-e7-Phc">

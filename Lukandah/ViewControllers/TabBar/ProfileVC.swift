@@ -88,9 +88,12 @@ extension ProfileVC: UITableViewDelegate,UITableViewDataSource{
         case 0:
             let vc = storyboard?.instantiateViewController(withIdentifier: "EditprofileVC") as! EditprofileVC
             self.navigationController?.pushViewController(vc, animated: true)
+        case 5:
+            logoutApi()
         default:
             print("hello")
         }
+        
     }
 }
 
@@ -143,4 +146,38 @@ extension ProfileVC{
         picker.dismiss(animated: true, completion: nil)
     }
     
+}
+
+extension ProfileVC{
+    func logoutApi(){
+        let token = UserDefaults.standard.value(forKey: "token") as! String
+        let head: HTTPHeaders = ["x-access-token": token]
+        print("TOKEN",token)
+        AF.request(Api.UserLogout,method: .post,encoding: JSONEncoding.default,headers: head).responseJSON{
+            response in
+            switch(response.result){
+            case .success(let json):do {
+                let status = response.response?.statusCode
+                let respond = json as! NSDictionary
+                print(respond)
+                if status == 200{
+                    print("api integrated")
+                    UserDefaults.standard.set(token, forKey: "token")
+                    let vc = storyBoards.Main.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }else{
+                    let message = respond.object(forKey: "error") as! String
+                    let alert = UIAlertController(title: "Logout", message: message, preferredStyle: .alert)
+                    let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alert.addAction(ok)
+                    self.present(alert, animated: true, completion: nil)
+                    print("USERLOGOUT")
+                }
+            }
+            case .failure(let error): do{
+                print(error)
+            }
+        }
+    }
+}
 }
